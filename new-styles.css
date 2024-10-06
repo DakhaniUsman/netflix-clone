@@ -151,15 +151,18 @@ p {
 .action-box > input {
   width: 70%;
   /* height:70%; */
+  height: 50px;
   padding: 18px 20px;
-  border-radius: 0px;
+  border-radius: 5px 0px 0px 5px;
   border: none;
   outline: none;
 }
 
 .action-box > .start-btn .btn {
   width: 200px;
-  height: 70%;
+  height: 50px;
+  /* height: 70%;    */
   padding: 15px 20px;
-  border-radius: 0px;
+  border-radius: 0px 5px 5px 0px;
+
 }
