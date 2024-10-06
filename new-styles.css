@@ -105,7 +105,7 @@
   align-items: center;
 }
 .banner {
-  width: 50%;
+  max-width: 700px;
   height: 300px;
   margin: auto;
   border: 2px solid blue;
@@ -113,6 +113,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transform: translate(0%, -18%);
 }
 
 .banner-desc {
@@ -121,8 +122,9 @@
   border: 2px solid yellow;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  margin: 20px;
 }
 
 h1 {
