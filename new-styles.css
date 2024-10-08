@@ -15,7 +15,7 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  padding: 0px 2em;
+  /* padding: 0px 2em; */
 }
 
 .hero {
@@ -58,7 +58,7 @@
   align-items: center;
 }
 
-.logo-container > img {
+.logo-container>img {
   width: 100%;
   height: 100%;
 }
@@ -104,6 +104,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .banner {
   max-width: 700px;
   height: 300px;
@@ -150,7 +151,7 @@ p {
   align-items: center;
 }
 
-.action-box > input {
+.action-box>input {
   width: 70%;
   /* height:70%; */
   height: 50px;
@@ -160,7 +161,7 @@ p {
   outline: none;
 }
 
-.action-box > .start-btn .btn {
+.action-box>.start-btn .btn {
   width: 200px;
   height: 50px;
   /* height: 70%;    */
