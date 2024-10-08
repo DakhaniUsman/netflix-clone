@@ -7,37 +7,68 @@
 #main {
   width: 100%;
   height: 100vh;
-  border: 5px solid red;
+  /* border: 5px solid red; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #main-container {
   width: 100%;
-  height: 100%;
+  /* height: 100vh; */
   background-color: black;
+  color: white;
   /* padding: 0px 2em; */
 }
 
 .hero {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   /* background-color: green; */
   color: white;
+  background: url(./assets/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  /* z-index: 1000; */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 10;
+  background: linear-gradient(to bottom, black, transparent);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 10;
+  background: linear-gradient(to top, black, transparent);
+
 }
 
 .header {
-  width: 100%;
-  height: 90px;
-  border: 2px solid green;
+  position: relative;
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  /* border: 2px solid green; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 .header-container {
   width: 100%;
   height: 100%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,13 +77,13 @@
 .logo {
   width: 30%;
   height: 100%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 .logo-container {
-  width: 160px;
+  width: 220px;
   height: 100%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: left;
   align-items: center;
@@ -66,19 +97,19 @@
 .sign-in {
   width: 30%;
   height: 100%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   display: flex;
   justify-content: right;
   align-items: center;
 }
 
 .sign-in-btn {
-  width: 200px;
+  width: 250px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .btn {
@@ -98,38 +129,42 @@
 
 .hero-body {
   width: 100%;
-  height: 100vh;
-  border: 2px solid red;
+  height: 100%;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
+  margin: auto;
 }
 
 .banner {
+  position: relative;
   max-width: 700px;
   height: 300px;
   margin: auto;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transform: translate(0%, -18%);
+  transform: translate(0%, -20%);
+  z-index: 1000;
 }
 
 .banner-desc {
   width: 100%;
   height: 75%;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  gap: 20px;
 }
 
 h1 {
-  width: 90%;
+  width: 100%;
   font-size: 3.2em;
   text-align: center;
 }
@@ -145,7 +180,7 @@ p {
 .action-box {
   width: 100%;
   height: 25%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,4 +202,191 @@ p {
   /* height: 70%;    */
   padding: 15px 20px;
   border-radius: 0px 5px 5px 0px;
+}
+
+.style-cards {
+  width: 100%;
+  /* height: 100vh; */
+  /* border: 2px solid red; */
+}
+
+.style-card {
+  width: 100%;
+  background-color: black;
+  border-top: 8px solid rgb(34, 34, 34);
+  padding: 50px 50px;
+  color: #fff;
+}
+
+.card-1-container {
+  width: 100%;
+  height: 100%;
+  padding: 3em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-1-left {
+  width: 55%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1-left-desc {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid green; */
+  padding: 0px 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  gap: 20px;
+}
+
+.style-card h2 {
+  font-size: 3em;
+}
+
+.style-card p {
+  width: 100%;
+  font-size: 1.7em;
+  line-height: 1.2em;
+}
+
+.card-1-right {
+  width: 45%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1-right-container {
+  position: relative;
+  min-width: 640px;
+  height: 480px;
+  padding: 0px 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid yellow; */
+}
+
+.card-1-right-container>img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.card-1-right-container>video {
+  position: absolute;
+  top: 21%;
+  left: 14.5%;
+  width: 70%;
+  z-index: 1;
+}
+
+.card-2-container {
+  width: 100%;
+  height: 100%;
+  padding: 3em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-2-left {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid blue; */
+}
+
+.card-2-left-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-2-outer-img {
+  min-width: 640px;
+  height: 480px;
+}
+
+.card-2-outer-img>img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-2-inner-img {
+  position: absolute;
+  bottom: 10%;
+  min-width: 350px;
+  height: 90px;
+  border: 2px solid #222222;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  border-radius: 5px;
+  /* border: 5px solid red; */
+}
+
+.card-2-inner-img >img:nth-child(1) {
+  /* border: 1px solid white; */
+  min-width: 50px;
+  height: 70px;
+}
+
+.card-2-inner-img p {
+  font-size: 1em;
+  font-weight: 600;
+  /* border: 2px solid blue; */
+  width: 50%;
+}
+
+
+.card-2-inner-img span {
+  font-size: 0.8em;
+
+}
+
+.card-2-inner-img >img:nth-child(3){
+  width: 50px;
+  height: 50px;
+}
+
+
+.card-2-right {
+  width: 55%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card-2-right-desc {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid green; */
+  padding: 0px 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+  gap: 20px;
 }
