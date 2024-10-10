@@ -8,6 +8,14 @@ faq.forEach((faq)=> {
         }
         else{
             faq.classList.add("active");
+                faq.forEach((otherfaq)=>{
+                    if(otherfaq != faq){
+                        otherfaq.classList.remove("active")
+                    }
+                    else{
+                        otherfaq.classList.add("active")
+                    }
+                })
         }
     })
 
