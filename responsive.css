@@ -170,34 +170,32 @@
         height: 30px;
     }
 
-    .card-1-container {
+    .card-3-container {
         flex-direction: column;
         gap: 30px;
     }
 
-
-
-    .card-1-left {
+    .card-3-left {
         width: 100%;
     }
 
-    .card-1-left-desc {
+    .card-3-left-desc {
         gap: 30px;
     }
 
-    .card-1-left-desc h2 {
+    .card-3-left-desc h2 {
         text-align: center;
     }
 
-    .card-1-left-desc p {
+    .card-3-left-desc p {
         text-align: center;
     }
 
-    .card-1-right {
+    .card-3-right {
         width: 100%;
     }
 
-    .card-1-right-container {
+    .card-3-right-container {
         min-width: 300px;
         height: 240px;
         padding: 0;
@@ -319,6 +317,37 @@
     .card-2-inner-img>img:nth-child(3) {
         width: 30px;
         height: 30px;
+    }
+
+    .card-3-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-3-left {
+        width: 100%;
+    }
+
+    .card-3-left-desc {
+        gap: 30px;
+    }
+
+    .card-3-left-desc p {
+        text-align: left;
+    }
+
+    .card-3-right {
+        width: 100%;
+    }
+
+    .style-card {
+        padding: 50px 0px;
+    }
+
+    .card-3-right-container {
+        min-width: 500px;
+        height: 340px;
+        /* padding: 3em 0px; */
     }
 }
 
