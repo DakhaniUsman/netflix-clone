@@ -200,6 +200,57 @@
         height: 240px;
         padding: 0;
     }
+
+    .card-4-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-4-right-desc {
+        padding: 0;
+    }
+
+    .card-4-left {
+        width: 100%;
+
+    }
+
+    .card-4-right-desc {
+        gap: 30px;
+    }
+
+    .card-4-right {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .card-4-img {
+        min-width: 300px;
+        height: 240px;
+        /* border: 2px solid red; */
+    }
+
+    .faq-container{
+        padding: 0px;
+    }
+
+    .faq-body-container{
+        padding:0px ;
+    }
+
+    .faq-heading {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .question, .answer{
+        font-size: 1em;
+    }
+
+    .question p, .answer p{
+        text-align: left;
+
+    }
 }
 
 /* mini tablets */
@@ -349,6 +400,40 @@
         height: 340px;
         /* padding: 3em 0px; */
     }
+
+    .card-4-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-4-left {
+        width: 100%;
+
+    }
+
+    .card-4-right-desc {
+        gap: 30px;
+    }
+
+    .card-4-right {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .card-4-img {
+        min-width: 500px;
+        height: 375px;
+        /* border: 2px solid red; */
+    }
+
+    .faq-heading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .question, .answer{
+        font-size: 1em;
+    }
 }
 
 
@@ -446,6 +531,40 @@
     }
 
 
+    .card-4-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card-4-left {
+        width: 100%;
+
+    }
+
+    .card-4-right-desc {
+        gap: 30px;
+    }
+
+    .card-4-right {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .card-4-img {
+        min-width: 640px;
+        height: 480px;
+        /* border: 2px solid red; */
+    }
+
+    .faq-heading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .question, .answer{
+        font-size: 1em;
+    }
+
 }
 
 
@@ -516,6 +635,12 @@
         min-width: 340px;
         height: 280px;
     }
+
+    .card-4-img {
+        min-width: 340px;
+        height: 280px;
+        /* border: 2px solid red; */
+    }
 }
 
 
@@ -553,4 +678,9 @@
         height: 380px;
     }
 
+
+    .card-4-img {
+        min-width: 540px;
+        height: 380px;
+    }
 }

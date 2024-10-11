@@ -1,22 +1,15 @@
-const faq = document.querySelectorAll(".faq");
-console.log(faq);
+const faqs = document.querySelectorAll(".faq");
 
-faq.forEach((faq)=> {
+faqs.forEach((faq) => {
     faq.addEventListener('click', () => {
-        if(faq.classList.contains("active")){
-            faq.classList.remove("active")
-        }
-        else{
-            faq.classList.add("active");
-                faq.forEach((otherfaq)=>{
-                    if(otherfaq != faq){
-                        otherfaq.classList.remove("active")
-                    }
-                    else{
-                        otherfaq.classList.add("active")
-                    }
-                })
-        }
-    })
+        // Toggle the active class for the clicked FAQ
+        faq.classList.toggle("active");
 
-})
+        // Close other FAQs except the clicked one
+        faqs.forEach((otherfaq) => {
+            if (otherfaq !== faq) {
+                otherfaq.classList.remove("active");
+            }
+        });
+    });
+});
